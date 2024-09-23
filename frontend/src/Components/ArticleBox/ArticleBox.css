@@ -34,8 +34,6 @@
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   transition: all 400ms ease;
-  /* text-align: center; */
-  /* margin: 0 auto !important; */
 }
 
 .article-card__btn:hover {

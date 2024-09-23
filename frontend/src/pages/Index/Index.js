@@ -1,12 +1,13 @@
 import React from "react";
-import Header from "../../Component/Header/Header";
-import LastCourses from "../../Component/LastCourses/LastCourses";
-import PopularCourses from "../../Component/PopularCourses/PopularCourses";
+import AboutUs from "../../Components/AboutUs/AboutUs";
+import Footer from "../../Components/Footer/Footer";
+import Header from "../../Components/Header/Header";
+import LastArticles from "../../Components/LastArticles/LastArticles";
+import LastCourses from "../../Components/LastCourses/LastCourses";
+import PopularCourses from "../../Components/PopularCourses/PopularCourses";
+import PresellCourses from "../../Components/PresellCourses/PresellCourses";
+
 import "./Index.css";
-import AboutUs from "../../Component/AboutUs/AboutUs";
-import PresellCourses from "../../Component/PresellCourses/PresellCourses";
-import LastArticles from "../../Component/LastArticles/LastArticles";
-import Footer from "../../Component/Footer/Footer";
 
 export default function Index() {
   return (

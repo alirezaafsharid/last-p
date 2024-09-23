@@ -5,6 +5,7 @@ import LandingCounter from "../LandingCounter/LandingCounter";
 import "./Landing.css";
 
 export default function Landing() {
+
   return (
     <section class="landing">
       <div class="container">

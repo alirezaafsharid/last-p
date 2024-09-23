@@ -93,7 +93,7 @@ export default function Footer() {
 
       <div class="footer__copyright">
         <span class="footer__copyright-text">
-          کلیه حقوق برای آکادمی آموزش برنامه نویسی ایران کد محفوظ است.
+          کلیه حقوق برای آکادمی آموزش برنامه نویسی سبز لرن محفوظ است.
         </span>
       </div>
     </footer>

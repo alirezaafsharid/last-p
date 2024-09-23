@@ -9,14 +9,16 @@ export default function SectionHeader({ title, desc, btnTitle }) {
         <span class="courses-header__title title">{title}</span>
         <span class="courses-header__text">{desc}</span>
       </div>
-      {btnTitle ? (
-        <div class="courses-header__left">
-          <a href="#" class="courses-header__link">
-            تمامی دوره ها
-            <i class="fas fa-arrow-left courses-header__icon"></i>
-          </a>
-        </div>
-      ) : null}
+      {
+          btnTitle ? (
+            <div class="courses-header__left">
+            <a href="#" class="courses-header__link">
+              تمامی دوره ها
+              <i class="fas fa-arrow-left courses-header__icon"></i>
+            </a>
+          </div>
+          ) : null
+      }
     </div>
   );
 }
