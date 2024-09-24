@@ -6,6 +6,7 @@ import Footer from "./../../Components/Footer/Footer";
 import "./CourseInfo.css";
 import Breadcrumb from "../../Components/Breadcrumb/Breadcrumb";
 import CourseDetailBox from "../../Components/CourseDetailBox/CourseDetailBox";
+import CommentsTextArea from "../../Components/CommentsTextArea/CommentsTextArea";
 
 export default function CourseInfo() {
   return (
@@ -366,6 +367,8 @@ export default function CourseInfo() {
                 </div>
 
                 {/* Finish Teacher Details */}
+
+                <CommentsTextArea />
               </div>
             </div>
 
@@ -418,9 +421,9 @@ export default function CourseInfo() {
                 <div class="course-info">
                   <span class="course-info__topic-title">سرفصل های دوره</span>
                   <span class="course-info__topic-text">
-                    &nbsp;برای مشاهده و یا دانلود دوره روی کلمه
-                    <a href="#" style={{ color: "blue", fontSize: "1.9rem" }}>
-                      &nbsp; لینک &nbsp;
+                    برای مشاهده و یا دانلود دوره روی کلمه
+                    <a href="#" style={{color: 'blue', fontWeight: 'bold'}}>
+                      لینک
                     </a>
                     کلیک کنید
                   </span>
@@ -483,11 +486,7 @@ export default function CourseInfo() {
           </div>
         </div>
       </main>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+
       <Footer />
     </>
   );
