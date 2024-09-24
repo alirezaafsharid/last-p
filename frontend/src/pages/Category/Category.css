@@ -1,7 +1,10 @@
 /* Start Courses Top-bar Styles */
-
+/* .course-info {
+  margin-bottom: 60px;
+} */
 .courses {
   margin: 4rem 0;
+  /* margin-bottom: 85px; */
 }
 
 .courses-top-bar {
