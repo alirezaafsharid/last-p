@@ -5,15 +5,33 @@ import Button from "../../Components/Form/Button";
 import Input from "../../Components/Form/Input";
 import Navbar from "../../Components/Navbar/Navbar";
 import Topbar from "../../Components/Topbar/Topbar";
+import { useForm } from "../../hooks/useForm";
 
 import "./Register.css";
 
 export default function Register() {
+  const [formState, onInputHandler] = useForm(
+    {
+      username: {
+        value: "",
+        isValid: false,
+      },
+      email: {
+        value: "",
+        isValid: false,
+      },
+      password: {
+        value: "",
+        isValid: false,
+      },
+    },
+    false
+  );
 
   const registerNewUser = (event) => {
-    event.preventDefault()
-    console.log('User Register');
-  }
+    event.preventDefault();
+    console.log("User Register");
+  };
 
   return (
     <>
@@ -23,9 +41,13 @@ export default function Register() {
       <section className="login-register">
         <div className="login register-form">
           <span className="login__title">ساخت حساب کاربری</span>
-          <span className="login__subtitle">خوشحالیم قراره به جمع ما بپیوندی</span>
+          <span className="login__subtitle">
+            خوشحالیم قراره به جمع ما بپیوندی
+          </span>
           <div className="login__new-member">
-            <span className="login__new-member-text">قبلا ثبت‌نام کرده‌اید؟ </span>
+            <span className="login__new-member-text">
+              قبلا ثبت‌نام کرده‌اید؟{" "}
+            </span>
             <Link className="login__new-member-link" to="/login">
               وارد شوید
             </Link>
@@ -37,6 +59,8 @@ export default function Register() {
                 placeholder="نام کاربری"
                 className="login-form__username-input"
                 element="input"
+                id="username"
+                onInputHandler={onInputHandler} // این تابع برای مدیریت داده‌های ورودی ارسال می‌شود
               />
               <i className="login-form__username-icon fa fa-user"></i>
             </div>
@@ -46,6 +70,8 @@ export default function Register() {
                 placeholder="آدرس ایمیل"
                 className="login-form__username-input"
                 element="input"
+                id="email"
+                onInputHandler={onInputHandler} // این تابع برای مدیریت داده‌های ورودی ارسال می‌شود
               />
               <i className="login-form__password-icon fa fa-envelope"></i>
             </div>
@@ -55,10 +81,17 @@ export default function Register() {
                 placeholder="رمز عبور"
                 className="login-form__password-input"
                 element="input"
+                id="password"
+                onInputHandler={onInputHandler} // این تابع برای مدیریت داده‌های ورودی ارسال می‌شود
               />
               <i className="login-form__password-icon fa fa-lock-open"></i>
             </div>
-            <Button className="login-form__btn" type="submit" onClick={registerNewUser} disabled={false}>
+            <Button
+              className="login-form__btn"
+              type="submit"
+              onClick={registerNewUser}
+              disabled={!formState.isFormValid}
+            >
               <i className="login-form__btn-icon fa fa-user-plus"></i>
               <span className="login-form__btn-text">عضویت</span>
             </Button>

@@ -4,17 +4,8 @@
 }
 
 .comments__title {
-  color: var(--white-color);
+  color: var(--dark-color);
   font-size: 1.2rem;
-  background-color: var(--primary-color);
-  width: 16rem;
-  margin-top: 2rem;
-  padding: 0.8rem 1.7rem;
-  /* text-align: center; */
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 1.4rem;
-  margin-bottom: 3rem;
 }
 
 .comments__text {

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "./SectionHeader.css";
 
 export default function SectionHeader({ title, desc, btnTitle, btnHref }) {
+  console.log(`href: ${btnHref}`);
   return (
     <div className="courses-header">
       <div className="courses-header__right">

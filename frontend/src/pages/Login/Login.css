@@ -38,12 +38,12 @@
 }
 .login__title {
   display: block;
-  color: var (--dark-color);
+  color: var(--dark-color);
   font-size: 2.2rem;
 }
 .login__subtitle {
   display: block;
-  color: var (--dark-color);
+  color: var(--dark-color);
   font-size: 1.5rem;
 }
 .login__new-member {
@@ -57,7 +57,7 @@
   padding: 1.5rem 0;
 }
 .login__new-member-text {
-  color: var (--dark-color);
+  color: var(--dark-color);
   font-size: 1.4rem;
 }
 .login__new-member-link {
@@ -94,7 +94,7 @@
   left: 1.5rem;
   top: 2rem;
   font-size: 2.2rem;
-  color: var(--dark-color);
+  color: #ccc;
 }
 .login-form__btn {
   width: 100%;
@@ -104,9 +104,17 @@
   margin-top: 0.8rem;
   display: flex;
   align-items: center;
-  background-color: var(--primary-color);
   position: relative;
 }
+
+.login-form__btn-success {
+  background-color: #6398bb;
+}
+
+.login-form__btn-error {
+  background-color: red;
+}
+
 .login-form__btn-icon {
   color: var(--white-color);
   font-size: 1.8rem;
@@ -131,16 +139,16 @@
   margin-left: 1rem;
 }
 .login-form__password-text {
-  color: #6c757d;
+  color: var(--dark-color);
   font-size: 1.4rem;
 }
 .login-form__password-forget-link {
-  color: #6c757d;
+  color: var(--dark-color);
   font-size: 1.4rem;
 }
 .login__des {
   margin-top: 3rem;
-  color: var (--dark-color);
+  color: var(--dark-color);
   font-size: 1.2rem;
   width: 100%;
 }
